@@ -1,0 +1,40 @@
+{
+  "name": "with-typescript-eslint-jest",
+  "author": "@erikdstock",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write **/*.{js,ts,tsx}",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "test": "jest",
+    "test-all": "yarn lint && yarn type-check && yarn test",
+    "update-all": "npm-check-updates -u"
+  },
+  "dependencies": {
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "10.2.1",
+    "@types/jest": "26.0.0",
+    "@types/node": "14.0.13",
+    "@types/react": "16.9.36",
+    "@types/testing-library__react": "10.0.1",
+    "@typescript-eslint/eslint-plugin": "3.2.0",
+    "@typescript-eslint/parser": "3.2.0",
+    "babel-jest": "26.0.1",
+    "eslint": "7.2.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-react": "7.20.0",
+    "jest": "26.0.1",
+    "jest-watch-typeahead": "0.6.0",
+    "npm-check-updates": "7.0.1",
+    "prettier": "2.0.5",
+    "typescript": "3.9.5"
+  }
+}
